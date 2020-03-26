@@ -12,8 +12,8 @@ class CreateViewController: UIViewController {
     
 
     @IBAction func cancel_button(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
-    
     @IBOutlet weak var post_field: UITextView!
     @IBAction func post_button(_ sender: Any) {
               //        https://teachapi.herokuapp.com/posts

@@ -10,10 +10,14 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
+    @IBOutlet weak var touroku: UIButton!
     @IBOutlet weak var newname: UITextField!
     @IBOutlet weak var newmail: UITextField!
     @IBOutlet weak var newpass: UITextField!
     @IBOutlet weak var newpass2: UITextField!
+    @IBAction func back_button(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     @IBAction func register(_ sender: Any) {
         
         //        https://teachapi.herokuapp.com/sign_up
@@ -62,10 +66,13 @@ class RegisterViewController: UIViewController {
         }
         task.resume()
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+      self.view.endEditing(true)
+    }
     override func viewDidLoad() {
     super.viewDidLoad()
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
-        
         self.navigationItem.hidesBackButton = true
+        touroku.layer.cornerRadius = 23;
     }}

@@ -42,7 +42,7 @@ class PostViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         
-            self.navigationItem.hidesBackButton = true
+//            self.navigationItem.hidesBackButton = true
         //    https://teachapi.herokuapp.com/posts
            let config: URLSessionConfiguration = URLSessionConfiguration.default
            let session: URLSession = URLSession(configuration: config)
