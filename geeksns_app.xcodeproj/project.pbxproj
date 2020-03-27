@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		46A323E4242C5F9E0078EC9E /* UserpostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E3242C5F9E0078EC9E /* UserpostViewController.swift */; };
 		46A323E6242C84420078EC9E /* UserpostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E5242C84420078EC9E /* UserpostCell.swift */; };
+		46A323E8242CADA80078EC9E /* MypageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E7242CADA80078EC9E /* MypageCell.swift */; };
 		C54EAF16240F7977000875BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF15240F7977000875BB /* AppDelegate.swift */; };
 		C54EAF18240F7977000875BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF17240F7977000875BB /* SceneDelegate.swift */; };
 		C54EAF1A240F7977000875BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF19240F7977000875BB /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		46A323E3242C5F9E0078EC9E /* UserpostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserpostViewController.swift; sourceTree = "<group>"; };
 		46A323E5242C84420078EC9E /* UserpostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserpostCell.swift; sourceTree = "<group>"; };
+		46A323E7242CADA80078EC9E /* MypageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageCell.swift; sourceTree = "<group>"; };
 		C54EAF12240F7977000875BB /* geeksns_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geeksns_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54EAF15240F7977000875BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54EAF17240F7977000875BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				C54EAF15240F7977000875BB /* AppDelegate.swift */,
+				46A323E7242CADA80078EC9E /* MypageCell.swift */,
 				C54EAF17240F7977000875BB /* SceneDelegate.swift */,
 				C54EAF19240F7977000875BB /* ViewController.swift */,
 				C54EAF1B240F7977000875BB /* Main.storyboard */,
@@ -307,6 +310,7 @@
 				C550DD3924179E73004D3801 /* NewpostCell.swift in Sources */,
 				C54EAF4A240F8A92000875BB /* PostViewController.swift in Sources */,
 				C550DD3D241885EB004D3801 /* DmCell.swift in Sources */,
+				46A323E8242CADA80078EC9E /* MypageCell.swift in Sources */,
 				C54EAF16240F7977000875BB /* AppDelegate.swift in Sources */,
 				C54EAF18240F7977000875BB /* SceneDelegate.swift in Sources */,
 				C54EAF48240F89B6000875BB /* LoginViewController.swift in Sources */,
