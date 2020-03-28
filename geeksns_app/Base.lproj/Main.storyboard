@@ -115,6 +115,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="TextField:" destination="gsc-on-SDr" eventType="editingChanged" id="8uQ-px-FPW"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp4-dN-9gM">
                                 <rect key="frame" x="20" y="477" width="373" height="47"/>
@@ -1234,7 +1237,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5ew-CW-80Z"/>
+        <segue reference="myG-cN-Uj7"/>
         <segue reference="zRY-xT-Qgs"/>
         <segue reference="7BK-Sm-v5C"/>
     </inferredMetricsTieBreakers>

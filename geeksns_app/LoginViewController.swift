@@ -16,6 +16,13 @@ class LoginViewController: UIViewController {
     @IBAction func back_button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    @IBAction func TextFieldActionBtnInactive(_ sender: Any) {
+        if password.text == "" {
+            login.isEnabled = false
+        } else {
+            login.isEnabled = true
+        }
+    }
     @IBAction func loginbutton(_ sender: Any) {
 //    https://teachapi.herokuapp.com/sign_in
         let config: URLSessionConfiguration = URLSessionConfiguration.default
@@ -65,7 +72,7 @@ class LoginViewController: UIViewController {
     super.viewDidLoad()
 //        address.borderStyle = .roundedRect
 //        address.layer.borderColor = CGColor(srgbRed: 0.5, green: 0.5, blue: 0.5, alpha: 1)
-        
+        login.isEnabled = false
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
