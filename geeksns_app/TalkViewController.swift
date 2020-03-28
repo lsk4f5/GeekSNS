@@ -1,5 +1,5 @@
 //
-//  TolkViewController.swift
+//  TalkViewController.swift
 //  geeksns_app
 //
 //  Created by 逢坂美芹 on 2020/03/10.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class TolkViewController: UIViewController {
+class TalkViewController: UIViewController {
     
     @IBAction func back_button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     override func viewDidLoad() {
     super.viewDidLoad()
     

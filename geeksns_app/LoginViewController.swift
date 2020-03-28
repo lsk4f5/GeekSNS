@@ -63,10 +63,13 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
     super.viewDidLoad()
+//        address.borderStyle = .roundedRect
+//        address.layer.borderColor = CGColor(srgbRed: 0.5, green: 0.5, blue: 0.5, alpha: 1)
+        
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
-        login.layer.cornerRadius = 23;
+        login.layer.cornerRadius = 47/2;
     }
 
 }
