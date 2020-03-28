@@ -10,14 +10,24 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
+//    登録ボタン
     @IBOutlet weak var touroku: UIButton!
     @IBOutlet weak var newname: UITextField!
     @IBOutlet weak var newmail: UITextField!
     @IBOutlet weak var newpass: UITextField!
     @IBOutlet weak var newpass2: UITextField!
+    
+    @IBAction func TextFieldActionBtnInactiv(_ sender: Any) {
+        if newpass2.text == "" {
+            touroku.isEnabled = false
+        } else {
+            touroku.isEnabled = true
+        }
+    }
     @IBAction func back_button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    //    登録ボタン
     @IBAction func register(_ sender: Any) {
         
         //        https://teachapi.herokuapp.com/sign_up
@@ -75,4 +85,6 @@ class RegisterViewController: UIViewController {
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
         touroku.layer.cornerRadius = 23;
+//        最初からボタンを非活性にする
+        touroku.isEnabled = false
     }}

@@ -16,23 +16,23 @@ class CreateViewController: UIViewController {
     }
     @IBOutlet weak var post_field: UITextView!
     @IBAction func post_button(_ sender: Any) {
-              //        https://teachapi.herokuapp.com/posts
-                let config: URLSessionConfiguration = URLSessionConfiguration.default
-                
-                let session: URLSession = URLSession(configuration: config)
-                
-                var urlComponents = URLComponents()
-                urlComponents.scheme = "https"
-                urlComponents.host = "teachapi.herokuapp.com"
-                urlComponents.path = "/posts"
-                
-                let url: URL = urlComponents.url!
-                var req: URLRequest = URLRequest(url: url)
-                req.httpMethod = "POST"
-                req.addValue("application/json", forHTTPHeaderField: "Content-Type")
-                let token: String = UserDefaults.standard.string(forKey: "token") ?? ""
-
-                req.addValue("Bearer " + token, forHTTPHeaderField: "Authorization")
+        //        https://teachapi.herokuapp.com/posts
+        let config: URLSessionConfiguration = URLSessionConfiguration.default
+        
+        let session: URLSession = URLSession(configuration: config)
+        
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "teachapi.herokuapp.com"
+        urlComponents.path = "/posts"
+        
+        let url: URL = urlComponents.url!
+        var req: URLRequest = URLRequest(url: url)
+        req.httpMethod = "POST"
+        req.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        let token: String = UserDefaults.standard.string(forKey: "token") ?? ""
+        
+        req.addValue("Bearer " + token, forHTTPHeaderField: "Authorization")
         
         /*
          では解説をしていきます。要は。
@@ -72,24 +72,24 @@ class CreateViewController: UIViewController {
         
         req.httpBody = try! JSONSerialization.data(withJSONObject: postParameter, options: .fragmentsAllowed)
         
-                let task = session.dataTask(with: req) { (data, response, error) in
-                  
-                    do {
-                        let json: [String: Any] = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
-                        print(json)
-                        
-                        
-                    } catch {
-                        
-                    }
+        let task = session.dataTask(with: req) { (data, response, error) in
+            
+            do {
+                let json: [String: Any] = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
+                print(json)
+                
+                
+            } catch {
                 
             }
-            task.resume()
-        }
-            override func viewDidLoad() {
-        super.viewDidLoad()
             
+        }
+        task.resume()
     }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //        self.navigationController?.popViewController(animated: true)
     }
+}
     
 

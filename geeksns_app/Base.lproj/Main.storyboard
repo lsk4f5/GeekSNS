@@ -243,6 +243,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="TextField:" destination="oL0-WR-Kbe" eventType="editingChanged" id="pQm-NH-cec"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プロフィール写真" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ift-DN-fbg">
                                 <rect key="frame" x="20" y="156" width="140" height="17"/>
@@ -393,7 +396,7 @@
                         <outlet property="newmail" destination="L5r-R0-hkT" id="0bb-fD-POd"/>
                         <outlet property="newname" destination="Zky-IM-Knr" id="3V8-m9-qY3"/>
                         <outlet property="newpass" destination="UVX-bS-Jlg" id="3YW-sv-e28"/>
-                        <outlet property="newpass2" destination="BYc-sS-eQW" id="TyE-9X-pci"/>
+                        <outlet property="newpass2" destination="BYc-sS-eQW" id="TbB-Ev-5lm"/>
                         <outlet property="touroku" destination="dg1-BS-woh" id="cXM-nN-USZ"/>
                     </connections>
                 </viewController>
