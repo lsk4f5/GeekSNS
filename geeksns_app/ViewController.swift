@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
+        //外枠の色を指定
+        self.login.layer.borderColor = UIColor.systemGreen.cgColor
+         
+        //外枠の太さを指定
+        self.login.layer.borderWidth = 1
         login.layer.cornerRadius = 23;
         touroku.layer.cornerRadius = 23;
         // Do any additional setup after loading the view.
