@@ -4,18 +4,15 @@
 //
 //  Created by osakamiseri on 2020/03/27.
 //  Copyright © 2020 逢坂美芹. All rights reserved.
-//
 
-import UIKit
+import  UIKit
 
-class CustomView: UIView {
+class CustomView: UITextField {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+   override func layoutSubviews() {
+    self.borderStyle = .none
+    self.layer.cornerRadius = 15
+    self.layer.borderWidth  = 0.5
+    self.layer.masksToBounds = true
     }
-    */
-
 }

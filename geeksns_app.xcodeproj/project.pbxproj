@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4601908D2446F5F2006AF893 /* OnryPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601908C2446F5F2006AF893 /* OnryPostViewController.swift */; };
 		46A323E4242C5F9E0078EC9E /* UserpostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E3242C5F9E0078EC9E /* UserpostViewController.swift */; };
 		46A323E6242C84420078EC9E /* UserpostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E5242C84420078EC9E /* UserpostCell.swift */; };
 		46A323E8242CADA80078EC9E /* MypageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E7242CADA80078EC9E /* MypageCell.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4601908C2446F5F2006AF893 /* OnryPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnryPostViewController.swift; sourceTree = "<group>"; };
 		46A323E3242C5F9E0078EC9E /* UserpostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserpostViewController.swift; sourceTree = "<group>"; };
 		46A323E5242C84420078EC9E /* UserpostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserpostCell.swift; sourceTree = "<group>"; };
 		46A323E7242CADA80078EC9E /* MypageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageCell.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				C54EAF4B240F8B30000875BB /* DmViewController.swift */,
 				46A323F1242FCBFD0078EC9E /* TalkViewController.swift */,
 				46A323E3242C5F9E0078EC9E /* UserpostViewController.swift */,
+				4601908C2446F5F2006AF893 /* OnryPostViewController.swift */,
 				C550DD3C241885EB004D3801 /* DmCell.swift */,
 				C54EAF4D240F8BA9000875BB /* MypageViewController.swift */,
 				C550DD3424173EB3004D3801 /* pageViewController.swift */,
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4601908D2446F5F2006AF893 /* OnryPostViewController.swift in Sources */,
 				C550DD3F2418C3E1004D3801 /* ChangeViewController.swift in Sources */,
 				C54EAF50241227FF000875BB /* KasuCell.swift in Sources */,
 				C54EAF1A240F7977000875BB /* ViewController.swift in Sources */,

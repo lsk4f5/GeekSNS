@@ -17,16 +17,17 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var newpass: UITextField!
     @IBOutlet weak var newpass2: UITextField!
     
-    @IBAction func TextFieldActionBtnInactiv(_ sender: Any) {
-        if newpass2.text == "" {
-            touroku.isEnabled = false
-        } else {
-            touroku.isEnabled = true
-        }
-    }
     @IBAction func back_button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+//    @IBAction func TextFieldActionBtnInactiv(_ sender: Any) {
+//        if newpass2.text == "" {
+//             touroku.isEnabled = false
+//           } else {
+//             touroku.isEnabled = true
+//           }
+//    }
     //    登録ボタン
     @IBAction func register(_ sender: Any) {
         
@@ -86,5 +87,5 @@ class RegisterViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         touroku.layer.cornerRadius = 23;
 //        最初からボタンを非活性にする
-        touroku.isEnabled = false
+//        touroku.isEnabled = false
     }}
