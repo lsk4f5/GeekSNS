@@ -86,6 +86,8 @@ class RegisterViewController: UIViewController {
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
         touroku.layer.cornerRadius = 23;
+        newpass.isSecureTextEntry = true
+        newpass2.isSecureTextEntry = true
 //        最初からボタンを非活性にする
 //        touroku.isEnabled = false
     }}
