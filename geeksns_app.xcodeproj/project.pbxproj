@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4601908D2446F5F2006AF893 /* OnryPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601908C2446F5F2006AF893 /* OnryPostViewController.swift */; };
-		46A323E4242C5F9E0078EC9E /* UserpostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E3242C5F9E0078EC9E /* UserpostViewController.swift */; };
 		46A323E6242C84420078EC9E /* UserpostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E5242C84420078EC9E /* UserpostCell.swift */; };
 		46A323E8242CADA80078EC9E /* MypageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E7242CADA80078EC9E /* MypageCell.swift */; };
 		46A323EC242E09AD0078EC9E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323EB242E09AD0078EC9E /* CustomView.swift */; };
-		46A323F2242FCBFD0078EC9E /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323F1242FCBFD0078EC9E /* TalkViewController.swift */; };
 		C54EAF16240F7977000875BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF15240F7977000875BB /* AppDelegate.swift */; };
 		C54EAF18240F7977000875BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF17240F7977000875BB /* SceneDelegate.swift */; };
 		C54EAF1A240F7977000875BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF19240F7977000875BB /* ViewController.swift */; };
@@ -27,9 +25,7 @@
 		C54EAF4C240F8B30000875BB /* DmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF4B240F8B30000875BB /* DmViewController.swift */; };
 		C54EAF4E240F8BA9000875BB /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF4D240F8BA9000875BB /* MypageViewController.swift */; };
 		C54EAF50241227FF000875BB /* KasuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF4F241227FF000875BB /* KasuCell.swift */; };
-		C550DD3524173EB3004D3801 /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550DD3424173EB3004D3801 /* pageViewController.swift */; };
 		C550DD3724175FAD004D3801 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550DD3624175FAD004D3801 /* CreateViewController.swift */; };
-		C550DD3924179E73004D3801 /* NewpostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550DD3824179E73004D3801 /* NewpostCell.swift */; };
 		C550DD3D241885EB004D3801 /* DmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550DD3C241885EB004D3801 /* DmCell.swift */; };
 		C550DD3F2418C3E1004D3801 /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550DD3E2418C3E1004D3801 /* ChangeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,11 +49,9 @@
 
 /* Begin PBXFileReference section */
 		4601908C2446F5F2006AF893 /* OnryPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnryPostViewController.swift; sourceTree = "<group>"; };
-		46A323E3242C5F9E0078EC9E /* UserpostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserpostViewController.swift; sourceTree = "<group>"; };
 		46A323E5242C84420078EC9E /* UserpostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserpostCell.swift; sourceTree = "<group>"; };
 		46A323E7242CADA80078EC9E /* MypageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageCell.swift; sourceTree = "<group>"; };
 		46A323EB242E09AD0078EC9E /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		46A323F1242FCBFD0078EC9E /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TalkViewController.swift; path = ../TalkViewController.swift; sourceTree = "<group>"; };
 		C54EAF12240F7977000875BB /* geeksns_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geeksns_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54EAF15240F7977000875BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54EAF17240F7977000875BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +72,7 @@
 		C54EAF4B240F8B30000875BB /* DmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmViewController.swift; sourceTree = "<group>"; };
 		C54EAF4D240F8BA9000875BB /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		C54EAF4F241227FF000875BB /* KasuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KasuCell.swift; sourceTree = "<group>"; };
-		C550DD3424173EB3004D3801 /* pageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
 		C550DD3624175FAD004D3801 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
-		C550DD3824179E73004D3801 /* NewpostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewpostCell.swift; sourceTree = "<group>"; };
 		C550DD3C241885EB004D3801 /* DmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmCell.swift; sourceTree = "<group>"; };
 		C550DD3E2418C3E1004D3801 /* ChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,24 +127,20 @@
 			children = (
 				C54EAF15240F7977000875BB /* AppDelegate.swift */,
 				46A323EB242E09AD0078EC9E /* CustomView.swift */,
-				46A323E7242CADA80078EC9E /* MypageCell.swift */,
 				C54EAF17240F7977000875BB /* SceneDelegate.swift */,
-				C54EAF19240F7977000875BB /* ViewController.swift */,
 				C54EAF1B240F7977000875BB /* Main.storyboard */,
-				C54EAF4B240F8B30000875BB /* DmViewController.swift */,
-				46A323F1242FCBFD0078EC9E /* TalkViewController.swift */,
-				46A323E3242C5F9E0078EC9E /* UserpostViewController.swift */,
-				4601908C2446F5F2006AF893 /* OnryPostViewController.swift */,
-				C550DD3C241885EB004D3801 /* DmCell.swift */,
-				C54EAF4D240F8BA9000875BB /* MypageViewController.swift */,
-				C550DD3424173EB3004D3801 /* pageViewController.swift */,
-				C550DD3824179E73004D3801 /* NewpostCell.swift */,
-				C550DD3624175FAD004D3801 /* CreateViewController.swift */,
-				C54EAF49240F8A92000875BB /* PostViewController.swift */,
-				C550DD3E2418C3E1004D3801 /* ChangeViewController.swift */,
+				C54EAF19240F7977000875BB /* ViewController.swift */,
 				C54EAF45240F896E000875BB /* RegisterViewController.swift */,
 				C54EAF47240F89B6000875BB /* LoginViewController.swift */,
+				C54EAF49240F8A92000875BB /* PostViewController.swift */,
 				C54EAF4F241227FF000875BB /* KasuCell.swift */,
+				4601908C2446F5F2006AF893 /* OnryPostViewController.swift */,
+				C54EAF4D240F8BA9000875BB /* MypageViewController.swift */,
+				46A323E7242CADA80078EC9E /* MypageCell.swift */,
+				C550DD3E2418C3E1004D3801 /* ChangeViewController.swift */,
+				C550DD3624175FAD004D3801 /* CreateViewController.swift */,
+				C54EAF4B240F8B30000875BB /* DmViewController.swift */,
+				C550DD3C241885EB004D3801 /* DmCell.swift */,
 				46A323E5242C84420078EC9E /* UserpostCell.swift */,
 				C54EAF1E240F797B000875BB /* Assets.xcassets */,
 				C54EAF20240F797B000875BB /* LaunchScreen.storyboard */,
@@ -314,7 +302,6 @@
 				C550DD3F2418C3E1004D3801 /* ChangeViewController.swift in Sources */,
 				C54EAF50241227FF000875BB /* KasuCell.swift in Sources */,
 				C54EAF1A240F7977000875BB /* ViewController.swift in Sources */,
-				C550DD3924179E73004D3801 /* NewpostCell.swift in Sources */,
 				C54EAF4A240F8A92000875BB /* PostViewController.swift in Sources */,
 				C550DD3D241885EB004D3801 /* DmCell.swift in Sources */,
 				46A323E8242CADA80078EC9E /* MypageCell.swift in Sources */,
@@ -323,13 +310,10 @@
 				C54EAF18240F7977000875BB /* SceneDelegate.swift in Sources */,
 				C54EAF48240F89B6000875BB /* LoginViewController.swift in Sources */,
 				C54EAF4C240F8B30000875BB /* DmViewController.swift in Sources */,
-				46A323F2242FCBFD0078EC9E /* TalkViewController.swift in Sources */,
 				C54EAF46240F896E000875BB /* RegisterViewController.swift in Sources */,
-				46A323E4242C5F9E0078EC9E /* UserpostViewController.swift in Sources */,
 				C550DD3724175FAD004D3801 /* CreateViewController.swift in Sources */,
 				C54EAF4E240F8BA9000875BB /* MypageViewController.swift in Sources */,
 				46A323E6242C84420078EC9E /* UserpostCell.swift in Sources */,
-				C550DD3524173EB3004D3801 /* pageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

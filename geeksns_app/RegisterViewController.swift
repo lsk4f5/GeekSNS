@@ -20,14 +20,7 @@ class RegisterViewController: UIViewController {
     @IBAction func back_button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
-//    @IBAction func TextFieldActionBtnInactiv(_ sender: Any) {
-//        if newpass2.text == "" {
-//             touroku.isEnabled = false
-//           } else {
-//             touroku.isEnabled = true
-//           }
-//    }
+
     //    登録ボタン
     @IBAction func register(_ sender: Any) {
         
@@ -82,12 +75,13 @@ class RegisterViewController: UIViewController {
     }
     override func viewDidLoad() {
     super.viewDidLoad()
+        
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
         touroku.layer.cornerRadius = 23;
         newpass.isSecureTextEntry = true
         newpass2.isSecureTextEntry = true
-//        最初からボタンを非活性にする
-//        touroku.isEnabled = false
-    }}
+    }
+    
+}

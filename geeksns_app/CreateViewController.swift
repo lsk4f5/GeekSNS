@@ -16,6 +16,7 @@ class CreateViewController: UIViewController {
     }
     @IBOutlet weak var post_field: UITextView!
     @IBAction func post_button(_ sender: Any) {
+        
         //        https://teachapi.herokuapp.com/posts
         let config: URLSessionConfiguration = URLSessionConfiguration.default
         
@@ -88,7 +89,7 @@ class CreateViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        self.navigationController?.popViewController(animated: true)
+
     }
 }
     

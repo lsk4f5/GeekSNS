@@ -16,6 +16,7 @@ class ChangeViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func change_button(_ sender: Any) {
+        
         //    https://teachapi.herokuapp.com/users/{id}
         let config: URLSessionConfiguration = URLSessionConfiguration.default
         let session: URLSession = URLSession(configuration: config)
@@ -65,6 +66,6 @@ class ChangeViewController: UIViewController {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-//        self.navigationController?.popViewController(animated: true)
+
     }
 }

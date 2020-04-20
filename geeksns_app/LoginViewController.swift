@@ -66,6 +66,7 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         password.isSecureTextEntry = true
         login.layer.cornerRadius = 47/2;
     }
