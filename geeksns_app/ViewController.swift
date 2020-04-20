@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         self.login.layer.borderWidth = 1
         login.layer.cornerRadius = 23;
         touroku.layer.cornerRadius = 23;
-        // Do any additional setup after loading the view.
     }
 }
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4601908D2446F5F2006AF893 /* OnryPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601908C2446F5F2006AF893 /* OnryPostViewController.swift */; };
-		46A323E6242C84420078EC9E /* UserpostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E5242C84420078EC9E /* UserpostCell.swift */; };
 		46A323E8242CADA80078EC9E /* MypageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323E7242CADA80078EC9E /* MypageCell.swift */; };
 		46A323EC242E09AD0078EC9E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A323EB242E09AD0078EC9E /* CustomView.swift */; };
 		C54EAF16240F7977000875BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54EAF15240F7977000875BB /* AppDelegate.swift */; };
@@ -49,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		4601908C2446F5F2006AF893 /* OnryPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnryPostViewController.swift; sourceTree = "<group>"; };
-		46A323E5242C84420078EC9E /* UserpostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserpostCell.swift; sourceTree = "<group>"; };
 		46A323E7242CADA80078EC9E /* MypageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageCell.swift; sourceTree = "<group>"; };
 		46A323EB242E09AD0078EC9E /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C54EAF12240F7977000875BB /* geeksns_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geeksns_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +139,6 @@
 				C550DD3624175FAD004D3801 /* CreateViewController.swift */,
 				C54EAF4B240F8B30000875BB /* DmViewController.swift */,
 				C550DD3C241885EB004D3801 /* DmCell.swift */,
-				46A323E5242C84420078EC9E /* UserpostCell.swift */,
 				C54EAF1E240F797B000875BB /* Assets.xcassets */,
 				C54EAF20240F797B000875BB /* LaunchScreen.storyboard */,
 				C54EAF23240F797B000875BB /* Info.plist */,
@@ -313,7 +310,6 @@
 				C54EAF46240F896E000875BB /* RegisterViewController.swift in Sources */,
 				C550DD3724175FAD004D3801 /* CreateViewController.swift in Sources */,
 				C54EAF4E240F8BA9000875BB /* MypageViewController.swift in Sources */,
-				46A323E6242C84420078EC9E /* UserpostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
