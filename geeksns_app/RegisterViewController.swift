@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
     
 //    登録ボタン
     @IBOutlet weak var touroku: UIButton!
@@ -49,26 +49,33 @@ class RegisterViewController: UIViewController {
             ]
         ]
         
-        do{
-        req.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
-        }catch{
-            print(error.localizedDescription)
-        }
-
-        print(req)
-        let task = session.dataTask(with: req) { (data, response, error) in
-//            tokenせーぶしてるコード。これを登録とかログインに書くとどこでもtoken使えるようになる
-            do {
-                let json: [String: Any] = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
-                UserDefaults.standard.set(json["token"], forKey: "token")
-                UserDefaults.standard.synchronize()
+        func textFieldDidEndEditing(_ textField: UITextField) {
+            if newpass == newpass2 {
+                do{
+                    req.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+                }catch{
+                    print(error.localizedDescription)
+                }
                 
-            } catch {
-                
+                print(req)
+                let task = session.dataTask(with: req) { (data, response, error) in
+                    //            tokenせーぶしてるコード。これを登録とかログインに書くとどこでもtoken使えるようになる
+                    do {
+                        let json: [String: Any] = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
+                        UserDefaults.standard.set(json["token"], forKey: "token")
+                        UserDefaults.standard.synchronize()
+                        
+                    } catch {
+                        
+                    }
+                    
+                }
+                task.resume()
+            } else {
+                return
             }
-            
         }
-        task.resume()
+        
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       self.view.endEditing(true)
