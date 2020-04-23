@@ -49,8 +49,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             ]
         ]
         
+//        パスワード違っても弾かれない系
         func textFieldDidEndEditing(_ textField: UITextField) {
-            if newpass == newpass2 {
+            if newpass.text == newpass2.text {
                 do{
                     req.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
                 }catch{
@@ -72,7 +73,11 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 }
                 task.resume()
             } else {
+//                func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//                    return true
+//                 }
                 return
+                
             }
         }
         
