@@ -20,7 +20,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBAction func back_button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-
     //    登録ボタン
     @IBAction func register(_ sender: Any) {
         
@@ -71,26 +70,23 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         task.resume()
                 
     }
-    
+
     //        パスワード違っても弾かれない系
     func textFieldDidEndEditing(_ textField: UITextField) {
         if newpass.text == newpass2.text {
-            touroku.isEnabled = false
+            touroku.isEnabled = true
             
         } else {
 
-            return
-            
+            touroku.isEnabled = false
         }
     }
-
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       self.view.endEditing(true)
     }
     override func viewDidLoad() {
     super.viewDidLoad()
-        touroku.isEnabled = true
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
