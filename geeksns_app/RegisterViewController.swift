@@ -75,18 +75,22 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if newpass.text == newpass2.text {
             touroku.isEnabled = true
-            
+
         } else {
 
             touroku.isEnabled = false
         }
     }
     
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       self.view.endEditing(true)
     }
     override func viewDidLoad() {
     super.viewDidLoad()
+//        touroku.isEnabled = false
+        newpass.delegate = self
+        newpass2.delegate = self
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
