@@ -49,40 +49,42 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             ]
         ]
         
-//        パスワード違っても弾かれない系
-        func textFieldDidEndEditing(_ textField: UITextField) {
-            if newpass.text == newpass2.text {
-                touroku.isEnabled = false
-                do{
-                    req.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
-                }catch{
-                    print(error.localizedDescription)
-                }
-                
-                print(req)
-                let task = session.dataTask(with: req) { (data, response, error) in
-                    //            tokenせーぶしてるコード。これを登録とかログインに書くとどこでもtoken使えるようになる
-                    do {
-                        let json: [String: Any] = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
-                        UserDefaults.standard.set(json["token"], forKey: "token")
-                        UserDefaults.standard.synchronize()
-                        
-                    } catch {
-                        
-                    }
-                    
-                }
-                task.resume()
-            } else {
-//                func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//                    return true
-//                 }
-                return
-                
-            }
+        do{
+            req.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+        }catch{
+            print(error.localizedDescription)
         }
         
+        print(req)
+        let task = session.dataTask(with: req) { (data, response, error) in
+            //            tokenせーぶしてるコード。これを登録とかログインに書くとどこでもtoken使えるようになる
+            do {
+                let json: [String: Any] = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
+                UserDefaults.standard.set(json["token"], forKey: "token")
+                UserDefaults.standard.synchronize()
+                
+            } catch {
+                
+            }
+            
+        }
+        task.resume()
+                
     }
+    
+    //        パスワード違っても弾かれない系
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if newpass.text == newpass2.text {
+            touroku.isEnabled = false
+            
+        } else {
+
+            return
+            
+        }
+    }
+
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       self.view.endEditing(true)
     }
