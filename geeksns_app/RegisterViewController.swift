@@ -52,6 +52,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
 //        パスワード違っても弾かれない系
         func textFieldDidEndEditing(_ textField: UITextField) {
             if newpass.text == newpass2.text {
+                touroku.isEnabled = false
                 do{
                     req.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
                 }catch{
@@ -87,7 +88,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidLoad() {
     super.viewDidLoad()
-        
+        touroku.isEnabled = true
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
