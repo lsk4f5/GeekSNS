@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
     
 //    登録ボタン
     @IBOutlet weak var touroku: UIButton!
@@ -20,7 +20,6 @@ class RegisterViewController: UIViewController {
     @IBAction func back_button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-
     //    登録ボタン
     @IBAction func register(_ sender: Any) {
         
@@ -50,14 +49,14 @@ class RegisterViewController: UIViewController {
         ]
         
         do{
-        req.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
+            req.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
         }catch{
             print(error.localizedDescription)
         }
-
+        
         print(req)
         let task = session.dataTask(with: req) { (data, response, error) in
-//            tokenせーぶしてるコード。これを登録とかログインに書くとどこでもtoken使えるようになる
+            //            tokenせーぶしてるコード。これを登録とかログインに書くとどこでもtoken使えるようになる
             do {
                 let json: [String: Any] = try JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any]
                 UserDefaults.standard.set(json["token"], forKey: "token")
@@ -69,13 +68,29 @@ class RegisterViewController: UIViewController {
             
         }
         task.resume()
+                
     }
+
+    //        パスワード違っても弾かれない系　弾けたあああ
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if newpass.text == newpass2.text {
+            touroku.isEnabled = true
+
+        } else {
+
+            touroku.isEnabled = false
+        }
+    }
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       self.view.endEditing(true)
     }
     override func viewDidLoad() {
     super.viewDidLoad()
-        
+//        touroku.isEnabled = false
+        newpass.delegate = self
+        newpass2.delegate = self
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationItem.hidesBackButton = true
