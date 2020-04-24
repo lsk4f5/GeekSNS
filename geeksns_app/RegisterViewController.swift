@@ -71,7 +71,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 
     }
 
-    //        パスワード違っても弾かれない系
+    //        パスワード違っても弾かれない系　弾けたあああ
     func textFieldDidEndEditing(_ textField: UITextField) {
         if newpass.text == newpass2.text {
             touroku.isEnabled = true
