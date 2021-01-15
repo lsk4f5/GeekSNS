@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func loginbutton(_ sender: Any) {
         
-//    https://teachapi.herokuapp.com/sign_in
+        //    https://teachapi.herokuapp.com/sign_in
         let config: URLSessionConfiguration = URLSessionConfiguration.default
         
         let session: URLSession = URLSession(configuration: config)
@@ -36,9 +36,9 @@ class LoginViewController: UIViewController {
         req.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let params:[String:Any] = [
             "sign_in_user_params": [
-            "email": "\(address.text!)",
-            "password": "\(password.text!)",
-            "password_confirmation": "\(password.text!)"
+                "email": "\(address.text!)",
+                "password": "\(password.text!)",
+                "password_confirmation": "\(password.text!)"
             ]
         ]
         do{
@@ -54,19 +54,17 @@ class LoginViewController: UIViewController {
                 UserDefaults.standard.set(json["token"], forKey: "token")
                 UserDefaults.standard.synchronize()
                 
-            } catch {
-                
-            }
-            
+            } catch {}
         }
         task.resume()
     }
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         password.isSecureTextEntry = true
         login.layer.cornerRadius = 47/2;
     }

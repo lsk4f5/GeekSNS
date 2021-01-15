@@ -10,7 +10,7 @@ import UIKit
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
     
-//    登録ボタン
+    //    登録ボタン
     @IBOutlet weak var touroku: UIButton!
     @IBOutlet weak var newname: UITextField!
     @IBOutlet weak var newmail: UITextField!
@@ -39,12 +39,12 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         req.httpMethod = "POST"
         req.addValue("application/json", forHTTPHeaderField: "Content-Type")
         let params:[String:Any] = [
-          "sign_up_user_params": [
-            "name": "\(newname.text!)",
-              "bio": "a",
-              "email": "\(newmail.text!)",
-              "password": "\(newpass.text!)",
-              "password_confirmation": "\(newpass2.text!)"
+            "sign_up_user_params": [
+                "name": "\(newname.text!)",
+                "bio": "a",
+                "email": "\(newmail.text!)",
+                "password": "\(newpass.text!)",
+                "password_confirmation": "\(newpass2.text!)"
             ]
         ]
         
@@ -62,33 +62,26 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 UserDefaults.standard.set(json["token"], forKey: "token")
                 UserDefaults.standard.synchronize()
                 
-            } catch {
-                
-            }
-            
+            } catch {}
         }
         task.resume()
-                
     }
-
+    
     //        パスワード違っても弾かれない系　弾けたあああ
     func textFieldDidEndEditing(_ textField: UITextField) {
         if newpass.text == newpass2.text {
             touroku.isEnabled = true
-
         } else {
-
             touroku.isEnabled = false
         }
     }
     
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-      self.view.endEditing(true)
+        self.view.endEditing(true)
     }
+    
     override func viewDidLoad() {
-    super.viewDidLoad()
-//        touroku.isEnabled = false
+        super.viewDidLoad()
         newpass.delegate = self
         newpass2.delegate = self
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)

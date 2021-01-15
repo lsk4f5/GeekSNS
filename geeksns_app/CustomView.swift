@@ -9,10 +9,11 @@ import  UIKit
 
 class CustomView: UITextField {
 
-   override func layoutSubviews() {
-    self.borderStyle = .none
-    self.layer.cornerRadius = 15
-    self.layer.borderWidth  = 0.5
-    self.layer.masksToBounds = true
+    override func layoutSubviews() {
+        self.borderStyle = .none
+        self.layer.cornerRadius = 15
+        self.layer.borderWidth  = 0.5
+        self.layer.masksToBounds = true
     }
+
 }

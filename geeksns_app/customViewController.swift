@@ -22,6 +22,7 @@ class TextFieldViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    /*
     internal func setUpNotificationForTextField() {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(self.handleKeyboardWillShowNotification(_:)), name: .UIKeyboardWillShow, object: nil)
@@ -40,7 +41,7 @@ class TextFieldViewController: UIViewController, UITextFieldDelegate {
             
         }
     }
-    
+    */
     @objc private func handleKeyboardWillHideNotification(_ notification: Notification) {
         UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveEaseIn, animations: {
             self.view.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)

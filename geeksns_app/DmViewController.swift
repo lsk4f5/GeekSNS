@@ -8,11 +8,21 @@
 
 import UIKit
 
-class DmViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class DmViewController: UIViewController {
+    
+    @IBOutlet private weak var tableView: UITableView! {
+        didSet {
+            tableView.delegate = self
+            tableView.dataSource = self
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
 
-    
-    @IBOutlet weak var tableView: UITableView!
-    
+extension DmViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView,numberOfRowsInSection section: Int) -> Int {
         return 25
     }
@@ -20,16 +30,8 @@ class DmViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         return 85
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-            return cell
-        }
-    
-    override func viewDidLoad() {
-    super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
+        return cell
     }
 }
-

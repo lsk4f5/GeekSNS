@@ -10,14 +10,11 @@ import UIKit
 
 class OnryPostViewController: UIViewController {
     
-    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var post: UILabel!
     @IBOutlet weak var time: UILabel!
     
-    
     override func viewDidLoad() {
-    super.viewDidLoad()
-  
-}
+        super.viewDidLoad()
+    }
 }

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VwG-Tn-9gk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VwG-Tn-9gk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,9 +30,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rI-kd-jB8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rI-kd-jB8">
                                 <rect key="frame" x="40" y="668" width="334" height="47"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="ZN3-jc-yX5"/>
                                 </constraints>
@@ -43,14 +45,14 @@
                                     <segue destination="oL0-WR-Kbe" kind="show" id="Nhm-uV-fZi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e03-Px-iMX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e03-Px-iMX">
                                 <rect key="frame" x="40" y="735" width="334" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Itt-AG-kHA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="ログイン">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -69,7 +71,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="e03-Px-iMX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="8eP-Zw-I4O"/>
                             <constraint firstItem="M1w-uq-ajg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="B0a-ru-q2Q"/>
@@ -88,7 +91,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e03-Px-iMX" secondAttribute="trailing" constant="40" id="qQ0-HV-p4P"/>
                             <constraint firstItem="YZZ-96-gwg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rqT-rk-iTo"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="3d2-6q-jHc"/>
                     <connections>
@@ -110,16 +112,16 @@
                         <subviews>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" ●●●●●●" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="754-SB-55r" customClass="CustomView" customModule="geeksns_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="387" width="373" height="54"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="Puc-ht-HTa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp4-dN-9gM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp4-dN-9gM">
                                 <rect key="frame" x="20" y="477" width="373" height="47"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="2lS-ih-nzR"/>
                                 </constraints>
@@ -144,21 +146,21 @@
                             </label>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" geek@sns.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N8n-27-ZGp" customClass="CustomView" customModule="geeksns_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="292" width="373" height="54"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="wbD-gv-IWr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vad-gn-bs0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vad-gn-bs0">
                                 <rect key="frame" x="20" y="536.5" width="184" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="3cd-9z-yu1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="パスワードを忘れた場合はこちら">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjz-ac-bgO">
@@ -173,14 +175,14 @@
                             </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZx-wZ-UFe">
                                 <rect key="frame" x="0.0" y="33" width="414" height="44"/>
-                                <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="barTintColor" systemColor="darkTextColor"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="ログイン" id="QKa-4G-Z3q">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="h9O-sR-pBV">
-                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
                                             <connections>
                                                 <action selector="back_button:" destination="gsc-on-SDr" id="0bV-2G-gSw"/>
                                             </connections>
@@ -197,7 +199,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iPY-1Z-xCP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Vad-gn-bs0" firstAttribute="leading" secondItem="Xp4-dN-9gM" secondAttribute="leading" id="DTy-4G-6nA"/>
                             <constraint firstItem="OE8-Ll-iEg" firstAttribute="leading" secondItem="N8n-27-ZGp" secondAttribute="leading" id="JKH-zz-7fh"/>
@@ -218,7 +221,6 @@
                             <constraint firstItem="iPY-1Z-xCP" firstAttribute="trailing" secondItem="Xp4-dN-9gM" secondAttribute="trailing" constant="21" id="y10-Xh-tf0"/>
                             <constraint firstItem="kjz-ac-bgO" firstAttribute="top" secondItem="EZx-wZ-UFe" secondAttribute="bottom" constant="192" id="zaR-y9-vFu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="iPY-1Z-xCP"/>
                     </view>
                     <navigationItem key="navigationItem" id="tkH-1E-hbI"/>
                     <connections>
@@ -241,7 +243,7 @@
                         <subviews>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" geek@sns.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5r-R0-hkT" customClass="CustomView" customModule="geeksns_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="387" width="374" height="54"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="thP-oH-hg5"/>
                                 </constraints>
@@ -250,7 +252,7 @@
                             </textField>
                             <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" ●●●●●●" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BYc-sS-eQW" customClass="CustomView" customModule="geeksns_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="577" width="374" height="54"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="6kM-oB-5cN"/>
                                 </constraints>
@@ -269,7 +271,7 @@
                             </label>
                             <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" ●●●●●●" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-bS-Jlg" customClass="CustomView" customModule="geeksns_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="482" width="374" height="54"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="FCX-H9-eff"/>
                                 </constraints>
@@ -316,9 +318,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dg1-BS-woh">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dg1-BS-woh">
                                 <rect key="frame" x="20" y="678" width="374" height="47"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="Nl5-6Y-oQy"/>
                                 </constraints>
@@ -351,7 +353,7 @@
                                 <items>
                                     <navigationItem title="ユーザー登録" id="CWr-nu-6PA">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="g13-st-bcD">
-                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
                                             <connections>
                                                 <action selector="back_button:" destination="oL0-WR-Kbe" id="Hfj-ij-wAX"/>
                                             </connections>
@@ -361,7 +363,7 @@
                             </navigationBar>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" ギーク太郎" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zky-IM-Knr" customClass="CustomView" customModule="geeksns_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="292" width="374" height="54"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="z50-ja-z6r"/>
                                 </constraints>
@@ -377,7 +379,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lzJ-jR-54w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dg1-BS-woh" firstAttribute="leading" secondItem="BYc-sS-eQW" secondAttribute="leading" id="2HC-7h-cAl"/>
                             <constraint firstItem="VIg-Ha-gTy" firstAttribute="top" secondItem="eKt-mD-Rgc" secondAttribute="bottom" constant="102" id="5Dr-zu-QVZ"/>
@@ -410,7 +413,6 @@
                             <constraint firstItem="eKt-mD-Rgc" firstAttribute="trailing" secondItem="lzJ-jR-54w" secondAttribute="trailing" id="weA-cV-HyO"/>
                             <constraint firstItem="o9g-PI-AOy" firstAttribute="top" secondItem="UVX-bS-Jlg" secondAttribute="bottom" constant="18" id="yld-mD-mwX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="lzJ-jR-54w"/>
                     </view>
                     <navigationItem key="navigationItem" id="LAB-y6-Puv"/>
                     <connections>
@@ -470,7 +472,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IFC-Y3-aF6">
                                 <rect key="frame" x="0.0" y="400" width="414" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellId" rowHeight="176" id="xGV-su-Pzh" customClass="MypageCell" customModule="geeksns_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="176"/>
@@ -526,7 +528,7 @@
                                 <items>
                                     <navigationItem title="マイページ" id="mcL-pK-VDI">
                                         <barButtonItem key="rightBarButtonItem" title="ボタン" image="post" id="MQ6-lH-w3H">
-                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
                                             <connections>
                                                 <segue destination="koB-9Q-nJ6" kind="show" id="zRY-xT-Qgs"/>
                                             </connections>
@@ -534,21 +536,21 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYU-7i-4zO">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYU-7i-4zO">
                                 <rect key="frame" x="140.5" y="378" width="45" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="フォロー">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQW-Me-V4P">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQW-Me-V4P">
                                 <rect key="frame" x="215" y="378" width="57" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="フォロワー">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hZ-7O-RgE">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hZ-7O-RgE">
                                 <rect key="frame" x="81" y="378" width="30" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="投稿">
@@ -564,7 +566,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="n9T-MM-MzB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1el-be-FM6" firstAttribute="leading" secondItem="n9T-MM-MzB" secondAttribute="leading" id="4zE-gx-YT8"/>
                             <constraint firstItem="QQK-nn-NHw" firstAttribute="top" secondItem="ERC-Gd-Hb9" secondAttribute="bottom" constant="23" id="6eE-Fk-Igz"/>
@@ -585,10 +588,9 @@
                             <constraint firstItem="QQK-nn-NHw" firstAttribute="leading" secondItem="n9T-MM-MzB" secondAttribute="leading" constant="20" id="zHG-D5-1KX"/>
                             <constraint firstItem="1el-be-FM6" firstAttribute="top" secondItem="NNj-22-Q13" secondAttribute="top" constant="33" id="zNT-dn-4aM"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="n9T-MM-MzB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="mypage_on" id="4hb-Ro-dFp">
-                        <color key="badgeColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="badgeColor" systemColor="systemGreenColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="7Dh-WK-ANB"/>
                     <connections>
@@ -628,7 +630,7 @@
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="変更する" id="bYq-LF-1v5">
-                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
                                             <connections>
                                                 <action selector="change_button:" destination="SWr-Xc-CUg" id="JQP-A2-XIS"/>
                                             </connections>
@@ -662,14 +664,14 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRQ-aB-O8O">
                                 <rect key="frame" x="205" y="371" width="155" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mI3-wr-fj6">
                                 <rect key="frame" x="205" y="425" width="155" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -689,8 +691,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dkQ-of-dP8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="s7A-Qk-aTa"/>
                     <connections>
@@ -713,7 +715,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bje-mk-huj">
                                 <rect key="frame" x="0.0" y="77" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="126" id="1th-Dm-752" customClass="DmCell" customModule="geeksns_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="126"/>
@@ -784,16 +786,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kaU-nI-CTw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="a9r-sf-Tse" firstAttribute="trailing" secondItem="kaU-nI-CTw" secondAttribute="trailing" id="3BW-ME-mGS"/>
                             <constraint firstItem="a9r-sf-Tse" firstAttribute="leading" secondItem="kaU-nI-CTw" secondAttribute="leading" id="ijN-Dt-zEY"/>
                             <constraint firstItem="a9r-sf-Tse" firstAttribute="top" secondItem="c6w-C9-pRK" secondAttribute="top" constant="33" id="oF8-DT-bK9"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="kaU-nI-CTw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="message_on" id="DuE-hh-kNo">
-                        <color key="badgeColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="badgeColor" systemColor="systemGreenColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="H6X-v9-uJY"/>
                     <connections>
@@ -814,7 +816,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gdz-y0-GAt">
                                 <rect key="frame" x="0.0" y="77" width="414" height="736"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellId" rowHeight="68" id="vje-nm-hPX" customClass="KassCell" customModule="geeksns_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="68"/>
@@ -887,7 +889,7 @@
                                 <items>
                                     <navigationItem title="QUELQUEST" id="uqP-eZ-uV8">
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="post" id="XIW-v6-bDB">
-                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
                                             <connections>
                                                 <segue destination="koB-9Q-nJ6" kind="presentation" modalPresentationStyle="fullScreen" id="lZB-gy-O7z"/>
                                             </connections>
@@ -904,7 +906,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Al4-Y0-4Og"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Al4-Y0-4Og" firstAttribute="bottom" secondItem="gdz-y0-GAt" secondAttribute="bottom" id="2D1-BD-WJm"/>
                             <constraint firstItem="gdz-y0-GAt" firstAttribute="top" secondItem="hn3-HZ-ihi" secondAttribute="bottom" symbolic="YES" id="5tP-eZ-fFt"/>
@@ -914,7 +917,6 @@
                             <constraint firstItem="gdz-y0-GAt" firstAttribute="trailing" secondItem="Al4-Y0-4Og" secondAttribute="trailing" id="Tsq-uU-H3U"/>
                             <constraint firstItem="hn3-HZ-ihi" firstAttribute="leading" secondItem="Al4-Y0-4Og" secondAttribute="leading" id="gCG-Jj-IMa"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Al4-Y0-4Og"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="JLb-41-VGK"/>
                     <navigationItem key="navigationItem" title=" " id="Y7V-OO-ELS"/>
@@ -983,8 +985,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="zaL-7q-E7W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="o4C-Pv-tOi" firstAttribute="top" secondItem="snF-tN-KFa" secondAttribute="bottom" constant="37" id="4Qr-e8-ng7"/>
                             <constraint firstItem="OpS-NE-wAI" firstAttribute="top" secondItem="zNR-EG-VId" secondAttribute="bottom" constant="20" id="7Li-gH-eCe"/>
@@ -998,7 +1001,6 @@
                             <constraint firstItem="snF-tN-KFa" firstAttribute="top" secondItem="xy1-yk-llw" secondAttribute="top" constant="30" id="rYd-Mo-58s"/>
                             <constraint firstItem="zHZ-lX-09C" firstAttribute="leading" secondItem="OpS-NE-wAI" secondAttribute="leading" id="tGG-jM-PlS"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zaL-7q-E7W"/>
                     </view>
                     <navigationItem key="navigationItem" id="LGX-Fh-4ky"/>
                     <connections>
@@ -1031,7 +1033,7 @@
                                 <items>
                                     <navigationItem title="QUELQUEST" id="koM-9f-ehX">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="back" id="6ec-EC-Gpo">
-                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
                                             <connections>
                                                 <action selector="cancel:" destination="8FC-Ay-LeX" id="1Bk-gB-sdJ"/>
                                             </connections>
@@ -1062,21 +1064,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqp-JK-9pu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqp-JK-9pu">
                                 <rect key="frame" x="81" y="377" width="30" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="投稿">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K5-GO-hL2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K5-GO-hL2">
                                 <rect key="frame" x="140.5" y="377" width="45" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="フォロー">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rev-P2-vM1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rev-P2-vM1">
                                 <rect key="frame" x="215" y="377" width="57" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="フォロワー">
@@ -1086,7 +1088,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DxT-Eu-rcK">
                                 <rect key="frame" x="0.0" y="418" width="414" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellId" rowHeight="176" id="dAK-Nl-uIM" customClass="UserpostCell" customModule="geeksns_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="176"/>
@@ -1141,9 +1143,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz6-Oj-pFP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz6-Oj-pFP">
                                 <rect key="frame" x="287" y="315" width="106" height="29"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="ey9-it-g94"/>
                                     <constraint firstAttribute="width" constant="106" id="iqz-m7-jSI"/>
@@ -1165,7 +1167,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1OU-jS-Ptq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Qe3-Qx-neU" firstAttribute="leading" secondItem="Iuk-d2-fVp" secondAttribute="trailing" constant="11" id="53T-jR-c7s"/>
                             <constraint firstItem="rev-P2-vM1" firstAttribute="leading" secondItem="8K5-GO-hL2" secondAttribute="trailing" constant="29.5" id="Gdm-39-brC"/>
@@ -1186,7 +1189,6 @@
                             <constraint firstItem="Iuk-d2-fVp" firstAttribute="leading" secondItem="1OU-jS-Ptq" secondAttribute="leading" constant="20" id="sux-fd-NRj"/>
                             <constraint firstItem="rev-P2-vM1" firstAttribute="top" secondItem="8K5-GO-hL2" secondAttribute="top" id="sxC-uh-ASs"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="1OU-jS-Ptq"/>
                     </view>
                     <navigationItem key="navigationItem" id="ttM-VL-edl"/>
                     <connections>
@@ -1209,9 +1211,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="asB-Ok-tXw">
                                 <rect key="frame" x="60" y="90" width="344" height="507"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1232,7 +1234,7 @@
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="投稿する" id="5Dy-nK-Ua7">
-                                            <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
                                             <connections>
                                                 <action selector="post_button:" destination="koB-9Q-nJ6" id="U0M-dA-ejB"/>
                                             </connections>
@@ -1253,8 +1255,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="zhe-vv-NP9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="agg-f7-N2i"/>
@@ -1276,7 +1278,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemGreenColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="0w6-Ca-Pgb" kind="relationship" relationship="viewControllers" id="del-Ch-kop"/>
@@ -1326,8 +1328,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5ew-CW-80Z"/>
-        <segue reference="lZB-gy-O7z"/>
+        <segue reference="myG-cN-Uj7"/>
+        <segue reference="zRY-xT-Qgs"/>
         <segue reference="7BK-Sm-v5C"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1344,5 +1346,17 @@
         <image name="mypage_on" width="21" height="24"/>
         <image name="post" width="19" height="19"/>
         <image name="scott-webb-57628-unsplash" width="472" height="502"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
