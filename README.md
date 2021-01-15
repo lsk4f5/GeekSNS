@@ -1,2 +1,2 @@
-# GeekSNS_app
+# GeekSNS
 
