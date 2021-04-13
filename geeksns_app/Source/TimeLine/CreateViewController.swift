@@ -8,21 +8,21 @@
 
 import UIKit
 
-class CreateViewController: UIViewController {
+final class CreateViewController: UIViewController {
 
     @IBOutlet weak var post_field: UITextView!
     @IBAction func cancel_button(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func post_button(_ sender: Any) {
-        post()
+        postApi()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    func post() {
+    private func postApi() {
         //        https://teachapi.herokuapp.com/posts
         let config: URLSessionConfiguration = URLSessionConfiguration.default
         let session: URLSession = URLSession(configuration: config)
@@ -40,7 +40,6 @@ class CreateViewController: UIViewController {
         req.addValue("Bearer " + token, forHTTPHeaderField: "Authorization")
 
         /*
-         では解説をしていきます。要は。
          {
          post_params: {
          text: "テキストの内容"
@@ -68,7 +67,6 @@ class CreateViewController: UIViewController {
          まず2重の辞書を作って、その辞書をJSONSerializationを使って辞書からDataに変換し
          req.httpBodyに入れています。
          req.httpBody = try! JSONSerialization.data(withJSONObject: postParameter, options: .fragmentsAllowed)
-         です
          */
         var postParameter = [String: Any]()
         var param = [String: Any]()

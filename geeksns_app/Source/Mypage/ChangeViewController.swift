@@ -8,15 +8,15 @@
 
 import UIKit
 
-class ChangeViewController: UIViewController {
+final class ChangeViewController: UIViewController {
 
-    @IBOutlet weak var name_change: UITextField!
-    @IBOutlet weak var bio_change: UITextField!
-    @IBAction func cancel_button(_ sender: Any) {
+    @IBOutlet weak var nameChange: UITextField!
+    @IBOutlet weak var bioChange: UITextField!
+    @IBAction func cancelButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    @IBAction func change_button(_ sender: Any) {
-        change()
+    @IBAction func changeButton(_ sender: Any) {
+        changeApi()
     }
 
     override func viewDidLoad() {
@@ -24,8 +24,8 @@ class ChangeViewController: UIViewController {
         
     }
 
-    func change() {
-        //    https://teachapi.herokuapp.com/users/{id}
+    private func changeApi() {
+        // https://teachapi.herokuapp.com/users/{id}
         let config: URLSessionConfiguration = URLSessionConfiguration.default
         let session: URLSession = URLSession(configuration: config)
         var urlComponents = URLComponents()
@@ -38,13 +38,13 @@ class ChangeViewController: UIViewController {
         req.httpMethod = "PUT"
         req.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        //        トークン使ってる
+        // トークン使ってる
         let token: String = UserDefaults.standard.string(forKey: "token") ?? ""
         req.addValue("Bearer " + token, forHTTPHeaderField: "Authorization")
         var userParameter = [String: Any]()
         var param = [String: Any]()
-        param["name"] = name_change.text
-        param["bio"] = bio_change.text
+        param["name"] = nameChange.text
+        param["bio"] = bioChange.text
         userParameter["user_params"] = param
         req.httpBody = try! JSONSerialization.data(withJSONObject: userParameter, options: .fragmentsAllowed)
 

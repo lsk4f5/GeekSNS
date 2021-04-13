@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MypageCell: UITableViewCell {
+final class MyPageCell: UITableViewCell {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var post: UILabel!

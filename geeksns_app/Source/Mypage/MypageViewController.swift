@@ -8,9 +8,11 @@
 
 import UIKit
 
-class MypageViewController: UIViewController {
+final class MyPageViewController: UIViewController {
 
-    var Mypage: [[String: Any]]?
+    var myPage: [[String: Any]]?
+    private let cellId = "CellId"
+
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
@@ -31,6 +33,7 @@ class MypageViewController: UIViewController {
         urlComponents.scheme = "https"
         urlComponents.host = "teachapi.herokuapp.com"
         urlComponents.path = "/posts"
+
         let url: URL = urlComponents.url!
         var req: URLRequest = URLRequest(url: url)
         req.httpMethod = "GET"
@@ -41,7 +44,7 @@ class MypageViewController: UIViewController {
             do {
                 let json: [[String: Any]] = try JSONSerialization.jsonObject(with: data!, options: []) as! [[String: Any]]
 
-                self.Mypage = json
+                self.myPage = json
 
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
@@ -52,16 +55,16 @@ class MypageViewController: UIViewController {
     }
 }
 
-extension MypageViewController: UITableViewDelegate, UITableViewDataSource {
+extension MyPageViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 25
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let MypageCell = tableView.dequeueReusableCell(withIdentifier: "CellId", for: indexPath) as! MypageCell
+        let MypageCell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MyPageCell
 
-        if let Mypage = Mypage {
+        if let Mypage = myPage {
             MypageCell.post.text = Mypage[indexPath.row]["text"] as? String
             MypageCell.name.text =  (Mypage[indexPath.row]["user"] as? [String: Any])?["name"] as? String
         }

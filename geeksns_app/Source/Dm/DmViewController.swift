@@ -8,7 +8,9 @@
 
 import UIKit
 
-class DmViewController: UIViewController {
+final class DmViewController: UIViewController {
+
+    private let cellId = "Cell"
     
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -23,15 +25,19 @@ class DmViewController: UIViewController {
 }
 
 extension DmViewController: UITableViewDelegate, UITableViewDataSource {
+
     func tableView(_ tableView: UITableView,numberOfRowsInSection section: Int) -> Int {
         return 25
     }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 85
     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! DmCell
 
         return cell
     }
+
 }
