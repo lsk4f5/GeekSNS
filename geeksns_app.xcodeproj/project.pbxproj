@@ -125,26 +125,8 @@
 		C54EAF14240F7977000875BB /* geeksns_app */ = {
 			isa = PBXGroup;
 			children = (
-				C54EAF15240F7977000875BB /* AppDelegate.swift */,
-				C54EAF17240F7977000875BB /* SceneDelegate.swift */,
-				46A323EB242E09AD0078EC9E /* CustomView.swift */,
-				C54EAF1B240F7977000875BB /* Main.storyboard */,
-				C54EAF19240F7977000875BB /* ViewController.swift */,
-				C54EAF45240F896E000875BB /* RegisterViewController.swift */,
-				467B86232451CA800056B797 /* customViewController.swift */,
-				C54EAF47240F89B6000875BB /* LoginViewController.swift */,
-				C54EAF49240F8A92000875BB /* PostViewController.swift */,
-				C54EAF4F241227FF000875BB /* KasuCell.swift */,
-				4601908C2446F5F2006AF893 /* OnryPostViewController.swift */,
-				C54EAF4D240F8BA9000875BB /* MypageViewController.swift */,
-				46A323E7242CADA80078EC9E /* MypageCell.swift */,
-				C550DD3E2418C3E1004D3801 /* ChangeViewController.swift */,
-				C550DD3624175FAD004D3801 /* CreateViewController.swift */,
-				C54EAF4B240F8B30000875BB /* DmViewController.swift */,
-				C550DD3C241885EB004D3801 /* DmCell.swift */,
-				C54EAF1E240F797B000875BB /* Assets.xcassets */,
-				C54EAF20240F797B000875BB /* LaunchScreen.storyboard */,
-				C54EAF23240F797B000875BB /* Info.plist */,
+				C5C774F4262555F8007D1281 /* Source */,
+				C5C774F3262555F0007D1281 /* Resource */,
 			);
 			path = geeksns_app;
 			sourceTree = "<group>";
@@ -165,6 +147,96 @@
 				C54EAF39240F797B000875BB /* Info.plist */,
 			);
 			path = geeksns_appUITests;
+			sourceTree = "<group>";
+		};
+		C5C774F226255592007D1281 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C54EAF15240F7977000875BB /* AppDelegate.swift */,
+				C54EAF17240F7977000875BB /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C5C774F3262555F0007D1281 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C54EAF1E240F797B000875BB /* Assets.xcassets */,
+				C54EAF20240F797B000875BB /* LaunchScreen.storyboard */,
+				C54EAF23240F797B000875BB /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C5C774F4262555F8007D1281 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				46A323EB242E09AD0078EC9E /* CustomView.swift */,
+				467B86232451CA800056B797 /* customViewController.swift */,
+				C5C774F226255592007D1281 /* App */,
+				C5C774FB26255770007D1281 /* Top */,
+				C5C774FE2625578F007D1281 /* TimeLine */,
+				C5C774FD2625577F007D1281 /* Login */,
+				C5C774FC26255778007D1281 /* Register */,
+				C5C774FF26255797007D1281 /* Mypage */,
+				C5C7750026255806007D1281 /* Dm */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C5C774FB26255770007D1281 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				C54EAF19240F7977000875BB /* ViewController.swift */,
+				C54EAF1B240F7977000875BB /* Main.storyboard */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		C5C774FC26255778007D1281 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C54EAF45240F896E000875BB /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C5C774FD2625577F007D1281 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C54EAF47240F89B6000875BB /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C5C774FE2625578F007D1281 /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				C54EAF49240F8A92000875BB /* PostViewController.swift */,
+				C54EAF4F241227FF000875BB /* KasuCell.swift */,
+				C550DD3624175FAD004D3801 /* CreateViewController.swift */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		C5C774FF26255797007D1281 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				C550DD3E2418C3E1004D3801 /* ChangeViewController.swift */,
+				4601908C2446F5F2006AF893 /* OnryPostViewController.swift */,
+				C54EAF4D240F8BA9000875BB /* MypageViewController.swift */,
+				46A323E7242CADA80078EC9E /* MypageCell.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		C5C7750026255806007D1281 /* Dm */ = {
+			isa = PBXGroup;
+			children = (
+				C54EAF4B240F8B30000875BB /* DmViewController.swift */,
+				C550DD3C241885EB004D3801 /* DmCell.swift */,
+			);
+			path = Dm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,8 +559,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62R8899FU5;
-				INFOPLIST_FILE = geeksns_app/Info.plist;
+				DEVELOPMENT_TEAM = J6V2UNL325;
+				INFOPLIST_FILE = geeksns_app/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,8 +577,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62R8899FU5;
-				INFOPLIST_FILE = geeksns_app/Info.plist;
+				DEVELOPMENT_TEAM = J6V2UNL325;
+				INFOPLIST_FILE = geeksns_app/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
