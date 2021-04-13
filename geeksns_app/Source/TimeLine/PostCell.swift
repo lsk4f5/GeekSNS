@@ -8,10 +8,10 @@
 
 import UIKit
 
-class KassCell: UITableViewCell {
+final class PostCell: UITableViewCell {
     
     @IBOutlet weak var kassLabel: UILabel!
     @IBOutlet weak var postimg: UIImageView!
     @IBOutlet weak var kassName: UILabel!
-    
+
 }

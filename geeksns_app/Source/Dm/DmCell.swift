@@ -8,8 +8,10 @@
 
 import UIKit
 
-class DmCell: UITableViewCell {
-    @IBOutlet weak var dm_img: UIImageView!
-    @IBOutlet weak var dm_name: UILabel!
-    @IBOutlet weak var dm_talk: UILabel!
+final class DmCell: UITableViewCell {
+
+    @IBOutlet weak var dmImg: UIImageView!
+    @IBOutlet weak var dmName: UILabel!
+    @IBOutlet weak var dmTalk: UILabel!
+
 }
